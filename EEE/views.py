@@ -36,13 +36,13 @@ def blog(request):
 
 @login_required(login_url = 'EEE:login')
 def contact(request):
-    return render(request, 'EEE\contact.html')
+    return render(request, 'EEE/contact.html')
 
 def index(request):
-    return render(request, 'EEE\index.html')
+    return render(request, 'EEE/index.html')
 
 def portfolio(request):
-    return render(request, 'EEE\portfolio.html')
+    return render(request, 'EEE/portfolio.html')
 
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView, ListView
 
